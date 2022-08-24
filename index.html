@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Кол-во на листе</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="all-list">
+    <div class="todo-list">
+
+    </div>
+    <div class="outBlock hidden">
+    <span class="out_arr">
+    </span>
+    <p class="progon">123</p>
+  </div>
+  </div>
+  <form class="add-form">
+    <input class="total-count" type="number" aria-label="Ввод" placeholder="всего на листе" required>
+    <input class="add-form-input" type="number" aria-label="Ввод" placeholder="Введите тираж изделия" required>
+    <button class="add-form-button" type="submit">Добавить</button>
+  </form>
+
+  <template id="printRun-template">
+    <div class="todo-list-item">
+      <label>
+        <input type="number" class="todo-list-input">
+        <span></span>
+      </label>
+    </div>
+  </template>
+  <template id="printCount-template">
+    <div class="todo-list-item">
+      <label>
+        <input type="number" class="todo-list-input">
+        <span></span>
+      </label>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
